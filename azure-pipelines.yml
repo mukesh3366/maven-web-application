@@ -13,7 +13,7 @@ pool:
   name: 'test'  # Replace with your agent pool name
 
 steps:
-- script: '/opt/apache-maven-3.x.y/bin/mvn clean install'
+- script: '/opt/apache-maven-3.9.5/bin/mvn clean install'
   displayName: 'Build Maven Project'
 
 
