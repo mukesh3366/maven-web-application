@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+name: demo on parameters
+parameters:
+  - name: projectname
+    type: string
+    default: version
+    values: 
+      - admin
+      - payment
+      - profile
+
+  - name: deploy
+    type: boolean
+    default: false
+
+pool:
+  name: 'test'
+  
+steps:
+- script: '/opt/apache-maven-3.9.5/bin/mvn clean install'
+  displayName: 'Build Maven Project'
