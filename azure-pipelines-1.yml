@@ -22,4 +22,4 @@ pool:
   - task: VSBuild@1
     inputs:
       solution: '**\*.sln'
-      msbuildArgs: '/t: ${{ parameters.projectname }}'
+      msbuildArgs: "/t: ${{ parameters.projectname }}"
