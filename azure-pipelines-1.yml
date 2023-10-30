@@ -18,5 +18,6 @@ parameters:
 pool:
   name: 'test'
 
-# steps:
+steps:
+- script: '/opt/apache-maven-3.9.5/bin/mvn clean install'
   
